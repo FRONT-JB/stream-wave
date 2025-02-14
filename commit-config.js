@@ -3,19 +3,16 @@
 module.exports = {
   prompter: (cz, commit) => {
     const typeChoices = [
-      { value: '✨ feat', name: '✨ feat:         새로운 기능' },
-      { value: '🐛 fix', name: '🐛 fix:          버그 수정' },
-      { value: '📚 docs', name: '📚 docs:         문서 업데이트' },
-      { value: '📒 blog', name: '📒 blog:         블로그 업데이트' },
-      { value: '🔨 refactor', name: '🔨 refactor:     리팩토링' },
-      {
-        value: '🚚 chore',
-        name: '🚚 chore:        빌드 과정 또는 보조 도구 수정',
-      },
-      { value: '💄 style', name: '💄 style:        스타일 수정' },
-      { value: '🔧 config', name: '🔧 config:       설정 수정' },
-      { value: '🚀 deploy', name: '🚀 deploy:       배포 수정' },
-      { value: '🔥 remove', name: '🔥 remove:       삭제 수정' },
+      { value: 'feat', name: 'feat:     ✨  새로운 기능' },
+      { value: 'fix', name: 'fix:      🐛  버그 수정' },
+      { value: 'docs', name: 'docs:     📚  문서 업데이트' },
+      { value: 'blog', name: 'blog:     📒  블로그 업데이트' },
+      { value: 'refactor', name: 'refactor: 🔨  리팩토링' },
+      { value: 'chore', name: 'chore:    🚚  빌드 과정 또는 보조 도구 수정' },
+      { value: 'style', name: 'style:    💄  스타일 수정' },
+      { value: 'config', name: 'config:   🔧  설정 수정' },
+      { value: 'deploy', name: 'deploy:   🚀  배포 수정' },
+      { value: 'remove', name: 'remove:   ��  삭제 수정' },
     ];
 
     const questions = [
