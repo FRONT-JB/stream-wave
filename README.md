@@ -1,8 +1,6 @@
 # Stream Wave
 
-<p align="center">
-    <img src="./stream-wave.jpeg" width="300">
-</p>
+![Stream Wave](./stream-wave.jpeg)
 
 ## Introduction
 
