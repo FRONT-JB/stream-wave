@@ -24,10 +24,10 @@ jobs:
               {"type":"docs","section":"Documentation","hidden":false},
               {"type":"style","section":"Styles","hidden":false},
               {"type":"refactor","section":"Code Refactoring","hidden":false},
-              {"type":"chore","section":"Miscellaneous","hidden":false},
-              {"type":"blog","section":"Blog Posts","hidden":false},
+              {"type":"chore","section":"Other Changes","hidden":false},
+              {"type":"blog","section":"Blog Posts","hidden":true},
               {"type":"config","section":"Configuration","hidden":false},
               {"type":"deploy","section":"Deployment","hidden":false},
-              {"type":"remove","section":"Removals","hidden":false}
+              {"type":"remove","section":"Removals","hidden":true}
             ]
           token: ${{ secrets.GH_TOKEN }}
