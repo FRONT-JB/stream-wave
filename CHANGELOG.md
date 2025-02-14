@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/FRONT-JB/stream-wave/compare/v1.0.0...v1.0.1) (2025-02-14)
+
+
+### Other Changes
+
+* release-please.yml squash-commits 옵션 추가 ([7f7c481](https://github.com/FRONT-JB/stream-wave/commit/7f7c4811e1c27184ea332424df8a92eac9b99882))
+
 ## 1.0.0 (2025-02-14)
 
 
