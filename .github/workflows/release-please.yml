@@ -17,4 +17,17 @@ jobs:
         with:
           release-type: node
           package-name: stream-wave
+          changelog-types: |
+            [
+              {"type":"feat","section":"Features","hidden":false},
+              {"type":"fix","section":"Bug Fixes","hidden":false},
+              {"type":"docs","section":"Documentation","hidden":false},
+              {"type":"style","section":"Styles","hidden":false},
+              {"type":"refactor","section":"Code Refactoring","hidden":false},
+              {"type":"chore","section":"Miscellaneous","hidden":false},
+              {"type":"blog","section":"Blog Posts","hidden":false},
+              {"type":"config","section":"Configuration","hidden":false},
+              {"type":"deploy","section":"Deployment","hidden":false},
+              {"type":"remove","section":"Removals","hidden":false}
+            ]
           token: ${{ secrets.GH_TOKEN }}
