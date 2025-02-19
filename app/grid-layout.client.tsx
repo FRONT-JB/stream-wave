@@ -23,19 +23,21 @@ interface GridLayoutProps {
 export function GridLayout({
   isDraggable = true,
   isResizable = true,
-  items = 20,
-  rowHeight = 30,
+  items = 10,
+  rowHeight = 40,
   onLayoutChange = () => {},
   cols = { lg: 12, md: 12, sm: 12, xs: 12, xxs: 12 },
 }: GridLayoutProps) {
   const generateLayouts = useCallback(() => {
     const times = [...Array(items)];
+
     const widths = { lg: 3, md: 4, sm: 6, xs: 12, xxs: 12 };
 
     return Object.keys(widths).reduce(
       (memo, breakpoint) => {
         const width = widths[breakpoint as keyof typeof widths];
         const columnCount = cols[breakpoint as keyof typeof cols];
+
         memo[breakpoint] = times.map((_, i) => ({
           x: (i * width) % columnCount,
           y: 0,
@@ -43,6 +45,7 @@ export function GridLayout({
           h: 4,
           i: String(i),
         }));
+
         return memo;
       },
       {} as Record<string, Array<{ x: number; y: number; w: number; h: number; i: string }>>
