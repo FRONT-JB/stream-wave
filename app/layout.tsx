@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
 import { Geist_Mono, Noto_Sans } from 'next/font/google';
+
 import './globals.css';
+import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
+
+import { AppSidebar } from './app-side-bar';
 
 const notoSans = Noto_Sans({
   variable: '--font-noto-sans',
@@ -25,7 +29,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${notoSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${notoSans.variable} ${geistMono.variable} antialiased`}>
+        <SidebarProvider>
+          <AppSidebar />
+
+          <main>
+            <SidebarTrigger />
+            {children}
+          </main>
+        </SidebarProvider>
+      </body>
     </html>
   );
 }
