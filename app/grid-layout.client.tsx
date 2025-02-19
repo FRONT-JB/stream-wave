@@ -20,7 +20,7 @@ interface GridLayoutProps {
   };
 }
 
-export function GridLayout({
+export default function GridLayout({
   isDraggable = true,
   isResizable = true,
   items = 10,
