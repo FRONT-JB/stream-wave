@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Geist_Mono, Noto_Sans } from 'next/font/google';
 
+import 'react-grid-layout/css/styles.css';
+import 'react-resizable/css/styles.css';
 import './globals.css';
 import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 
